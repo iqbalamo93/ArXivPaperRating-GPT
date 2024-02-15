@@ -1,256 +1,228 @@
-#### 1.FusionSF: Fuse Heterogeneous Modalities in a Vector Quantized Framework for Robust Solar Power Forecasting. [Link](http://arxiv.org/abs/2402.05823v1) 
-#### GPT Score: 96
-Innovation:19, Newness:19, Potential:20, Clarity:19, Relevance:19
+#### 1.Aya Dataset: An Open-Access Collection for Multilingual Instruction Tuning. [Link](http://arxiv.org/abs/2402.06619v1) 
+#### GPT Score: 100
+Innovation:20, Newness:20, Potential:20, Clarity:20, Relevance:20
 ### Summary
-Accurate solar power forecasting is crucial to integrate photovoltaic plants
-into the electric grid, schedule and secure the power grid safety. This problem
-becomes more demanding for those newly installed solar plants which lack
-sufficient data. Current research predominantly relies on historical solar
-power data or numerical weather prediction in a single-modality format,
-ignoring the complementary information provided in different modalities. In
-this paper, we propose a multi-modality fusion framework to integrate
-historical power data, numerical weather prediction, and satellite images,
-significantly improving forecast performance. We introduce a vector quantized
-framework that aligns modalities with varying information densities, striking a
-balance between integrating sufficient information and averting model
-overfitting. Our framework demonstrates strong zero-shot forecasting
-capability, which is especially useful for those newly installed plants.
-Moreover, we collect and release a multi-modal solar power (MMSP) dataset from
-real-world plants to further promote the research of multi-modal solar
-forecasting algorithms. Our extensive experiments show that our model not only
-operates with robustness but also boosts accuracy in both zero-shot forecasting
-and scenarios rich with training data, surpassing leading models. We have
-incorporated it into our eForecaster platform and deployed it for more than 300
-solar plants with a capacity of over 15GW.
+Datasets are foundational to many breakthroughs in modern artificial
+intelligence. Many recent achievements in the space of natural language
+processing (NLP) can be attributed to the finetuning of pre-trained models on a
+diverse set of tasks that enables a large language model (LLM) to respond to
+instructions. Instruction fine-tuning (IFT) requires specifically constructed
+and annotated datasets. However, existing datasets are almost all in the
+English language. In this work, our primary goal is to bridge the language gap
+by building a human-curated instruction-following dataset spanning 65
+languages. We worked with fluent speakers of languages from around the world to
+collect natural instances of instructions and completions. Furthermore, we
+create the most extensive multilingual collection to date, comprising 513
+million instances through templating and translating existing datasets across
+114 languages. In total, we contribute four key resources: we develop and
+open-source the Aya Annotation Platform, the Aya Dataset, the Aya Collection,
+and the Aya Evaluation Suite. The Aya initiative also serves as a valuable case
+study in participatory research, involving collaborators from 119 countries. We
+see this as a valuable framework for future research collaborations that aim to
+bridge gaps in resources.
 
-#### 2.Unveiling Group-Specific Distributed Concept Drift: A Fairness Imperative in Federated Learning. [Link](http://arxiv.org/abs/2402.07586v1) 
+#### 2.Accelerated Smoothing: A Scalable Approach to Randomized Smoothing. [Link](http://arxiv.org/abs/2402.07498v1) 
 #### GPT Score: 96
-Innovation:20, Newness:20, Potential:20, Clarity:18, Relevance:18
+Innovation:19, Newness:20, Potential:20, Clarity:19, Relevance:18
 ### Summary
-In the evolving field of machine learning, ensuring fairness has become a
-critical concern, prompting the development of algorithms designed to mitigate
-discriminatory outcomes in decision-making processes. However, achieving
-fairness in the presence of group-specific concept drift remains an unexplored
-frontier, and our research represents pioneering efforts in this regard.
-Group-specific concept drift refers to situations where one group experiences
-concept drift over time while another does not, leading to a decrease in
-fairness even if accuracy remains fairly stable. Within the framework of
-federated learning, where clients collaboratively train models, its distributed
-nature further amplifies these challenges since each client can experience
-group-specific concept drift independently while still sharing the same
-underlying concept, creating a complex and dynamic environment for maintaining
-fairness. One of the significant contributions of our research is the
-formalization and introduction of the problem of group-specific concept drift
-and its distributed counterpart, shedding light on its critical importance in
-the realm of fairness. In addition, leveraging insights from prior research, we
-adapt an existing distributed concept drift adaptation algorithm to tackle
-group-specific distributed concept drift which utilizes a multi-model approach,
-a local group-specific drift detection mechanism, and continuous clustering of
-models over time. The findings from our experiments highlight the importance of
-addressing group-specific concept drift and its distributed counterpart to
-advance fairness in machine learning.
+Randomized smoothing has emerged as a potent certifiable defense against
+adversarial attacks by employing smoothing noises from specific distributions
+to ensure the robustness of a smoothed classifier. However, the utilization of
+Monte Carlo sampling in this process introduces a compute-intensive element,
+which constrains the practicality of randomized smoothing on a larger scale. To
+address this limitation, we propose a novel approach that replaces Monte Carlo
+sampling with the training of a surrogate neural network. Through extensive
+experimentation in various settings, we demonstrate the efficacy of our
+approach in approximating the smoothed classifier with remarkable precision.
+Furthermore, we demonstrate that our approach significantly accelerates the
+robust radius certification process, providing nearly $600$X improvement in
+computation time, overcoming the computational bottlenecks associated with
+traditional randomized smoothing.
 
-#### 3.Advancing Data-driven Weather Forecasting: Time-Sliding Data Augmentation of ERA5. [Link](http://arxiv.org/abs/2402.08185v1) 
+#### 3.NCRF: Neural Contact Radiance Fields for Free-Viewpoint Rendering of Hand-Object Interaction. [Link](http://arxiv.org/abs/2402.05532v2) 
 #### GPT Score: 96
-Innovation:20, Newness:20, Potential:20, Clarity:18, Relevance:18
+Innovation:20, Newness:20, Potential:19, Clarity:18, Relevance:19
 ### Summary
-Modern deep learning techniques, which mimic traditional numerical weather
-prediction (NWP) models and are derived from global atmospheric reanalysis
-data, have caused a significant revolution within a few years. In this new
-paradigm, our research introduces a novel strategy that deviates from the
-common dependence on high-resolution data, which is often constrained by
-computational resources, and instead utilizes low-resolution data (2.5 degrees)
-for global weather prediction and climate data analysis. Our main focus is
-evaluating data-driven weather prediction (DDWP) frameworks, specifically
-addressing sample size adequacy, structural improvements to the model, and the
-ability of climate data to represent current climatic trends. By using the
-Adaptive Fourier Neural Operator (AFNO) model via FourCastNet and a proposed
-time-sliding method to inflate the dataset of the ECMWF Reanalysis v5 (ERA5),
-this paper improves on conventional approaches by adding more variables and a
-novel approach to data augmentation and processing. Our findings reveal that
-despite the lower resolution, the proposed approach demonstrates considerable
-accuracy in predicting atmospheric conditions, effectively rivaling
-higher-resolution models. Furthermore, the study confirms the model's
-proficiency in reflecting current climate trends and its potential in
-predicting future climatic events, underscoring its utility in climate change
-strategies. This research marks a pivotal step in the realm of meteorological
-forecasting, showcasing the feasibility of lower-resolution data in producing
-reliable predictions and opening avenues for more accessible and inclusive
-climate modeling. The insights gleaned from this study not only contribute to
-the advancement of climate science but also lay the groundwork for future
-innovations in the field.
+Modeling hand-object interactions is a fundamentally challenging task in 3D
+computer vision. Despite remarkable progress that has been achieved in this
+field, existing methods still fail to synthesize the hand-object interaction
+photo-realistically, suffering from degraded rendering quality caused by the
+heavy mutual occlusions between the hand and the object, and inaccurate
+hand-object pose estimation. To tackle these challenges, we present a novel
+free-viewpoint rendering framework, Neural Contact Radiance Field (NCRF), to
+reconstruct hand-object interactions from a sparse set of videos. In
+particular, the proposed NCRF framework consists of two key components: (a) A
+contact optimization field that predicts an accurate contact field from 3D
+query points for achieving desirable contact between the hand and the object.
+(b) A hand-object neural radiance field to learn an implicit hand-object
+representation in a static canonical space, in concert with the specifically
+designed hand-object motion field to produce observation-to-canonical
+correspondences. We jointly learn these key components where they mutually help
+and regularize each other with visual and geometric constraints, producing a
+high-quality hand-object reconstruction that achieves photo-realistic novel
+view synthesis. Extensive experiments on HO3D and DexYCB datasets show that our
+approach outperforms the current state-of-the-art in terms of both rendering
+quality and pose estimation accuracy.
 
-#### 4.LLaGA: Large Language and Graph Assistant. [Link](http://arxiv.org/abs/2402.08170v1) 
-#### GPT Score: 96
-Innovation:18, Newness:19, Potential:20, Clarity:20, Relevance:19
-### Summary
-Graph Neural Networks (GNNs) have empowered the advance in graph-structured
-data analysis. Recently, the rise of Large Language Models (LLMs) like GPT-4
-has heralded a new era in deep learning. However, their application to graph
-data poses distinct challenges due to the inherent difficulty of translating
-graph structures to language. To this end, we introduce the \textbf{L}arge
-\textbf{L}anguage \textbf{a}nd \textbf{G}raph \textbf{A}ssistant
-(\textbf{LLaGA}), an innovative model that effectively integrates LLM
-capabilities to handle the complexities of graph-structured data. LLaGA retains
-the general-purpose nature of LLMs while adapting graph data into a format
-compatible with LLM input. LLaGA achieves this by reorganizing graph nodes to
-structure-aware sequences and then mapping these into the token embedding space
-through a versatile projector. LLaGA excels in versatility, generalizability
-and interpretability, allowing it to perform consistently well across different
-datasets and tasks, extend its ability to unseen datasets or tasks, and provide
-explanations for graphs. Our extensive experiments across popular graph
-benchmarks show that LLaGA delivers outstanding performance across four
-datasets and three tasks using one single model, surpassing state-of-the-art
-graph models in both supervised and zero-shot scenarios. Our code is available
-at \url{https://github.com/ChenRunjin/LLaGA}
-
-#### 5.ChemLLM: A Chemical Large Language Model. [Link](http://arxiv.org/abs/2402.06852v1) 
+#### 4.RL-VLM-F: Reinforcement Learning from Vision Language Foundation Model Feedback. [Link](http://arxiv.org/abs/2402.03681v2) 
 #### GPT Score: 96
 Innovation:20, Newness:20, Potential:20, Clarity:18, Relevance:18
 ### Summary
-Large language models (LLMs) have made impressive progress in chemistry
-applications, including molecular property prediction, molecular generation,
-experimental protocol design, etc. However, the community lacks a
-dialogue-based model specifically designed for chemistry. The challenge arises
-from the fact that most chemical data and scientific knowledge are primarily
-stored in structured databases, and the direct use of these structured data
-compromises the model's ability to maintain coherent dialogue. To tackle this
-issue, we develop a novel template-based instruction construction method that
-transforms structured knowledge into plain dialogue, making it suitable for
-language model training. By leveraging this approach, we develop ChemLLM, the
-first large language model dedicated to chemistry, capable of performing
-various tasks across chemical disciplines with smooth dialogue interaction.
-ChemLLM beats GPT-3.5 on all three principal tasks in chemistry, i.e., name
-conversion, molecular caption, and reaction prediction, and surpasses GPT-4 on
-two of them. Remarkably, ChemLLM also shows exceptional adaptability to related
-mathematical and physical tasks despite being trained mainly on
-chemical-centric corpora. Furthermore, ChemLLM demonstrates proficiency in
-specialized NLP tasks within chemistry, such as literature translation and
-cheminformatic programming. ChemLLM opens up a new avenue for exploration
-within chemical studies, while our method of integrating structured chemical
-knowledge into dialogue systems sets a new frontier for developing LLMs across
-various scientific fields. Codes, Datasets, and Model weights are publicly
-accessible at hf.co/AI4Chem/ChemLLM-7B-Chat.
+Reward engineering has long been a challenge in Reinforcement Learning (RL)
+research, as it often requires extensive human effort and iterative processes
+of trial-and-error to design effective reward functions. In this paper, we
+propose RL-VLM-F, a method that automatically generates reward functions for
+agents to learn new tasks, using only a text description of the task goal and
+the agent's visual observations, by leveraging feedbacks from vision language
+foundation models (VLMs). The key to our approach is to query these models to
+give preferences over pairs of the agent's image observations based on the text
+description of the task goal, and then learn a reward function from the
+preference labels, rather than directly prompting these models to output a raw
+reward score, which can be noisy and inconsistent. We demonstrate that RL-VLM-F
+successfully produces effective rewards and policies across various domains -
+including classic control, as well as manipulation of rigid, articulated, and
+deformable objects - without the need for human supervision, outperforming
+prior methods that use large pretrained models for reward generation under the
+same assumptions.
 
-#### 6.Mapping the Ethics of Generative AI: A Comprehensive Scoping Review. [Link](http://arxiv.org/abs/2402.08323v1) 
-#### GPT Score: 95
-Innovation:20, Newness:20, Potential:20, Clarity:17, Relevance:18
+#### 5.Benchmarking and Building Long-Context Retrieval Models with LoCo and M2-BERT. [Link](http://arxiv.org/abs/2402.07440v1) 
+#### GPT Score: 96
+Innovation:20, Newness:20, Potential:20, Clarity:18, Relevance:18
 ### Summary
-The advent of generative artificial intelligence and the widespread adoption
-of it in society engendered intensive debates about its ethical implications
-and risks. These risks often differ from those associated with traditional
-discriminative machine learning. To synthesize the recent discourse and map its
-normative concepts, we conducted a scoping review on the ethics of generative
-artificial intelligence, including especially large language models and
-text-to-image models. Our analysis provides a taxonomy of 378 normative issues
-in 19 topic areas and ranks them according to their prevalence in the
-literature. The study offers a comprehensive overview for scholars,
-practitioners, or policymakers, condensing the ethical debates surrounding
-fairness, safety, harmful content, hallucinations, privacy, interaction risks,
-security, alignment, societal impacts, and others. We discuss the results,
-evaluate imbalances in the literature, and explore unsubstantiated risk
-scenarios.
+Retrieval pipelines-an integral component of many machine learning
+systems-perform poorly in domains where documents are long (e.g., 10K tokens or
+more) and where identifying the relevant document requires synthesizing
+information across the entire text. Developing long-context retrieval encoders
+suitable for these domains raises three challenges: (1) how to evaluate
+long-context retrieval performance, (2) how to pretrain a base language model
+to represent both short contexts (corresponding to queries) and long contexts
+(corresponding to documents), and (3) how to fine-tune this model for retrieval
+under the batch size limitations imposed by GPU memory constraints. To address
+these challenges, we first introduce LoCoV1, a novel 12 task benchmark
+constructed to measure long-context retrieval where chunking is not possible or
+not effective. We next present the M2-BERT retrieval encoder, an 80M parameter
+state-space encoder model built from the Monarch Mixer architecture, capable of
+scaling to documents up to 32K tokens long. We describe a pretraining data
+mixture which allows this encoder to process both short and long context
+sequences, and a finetuning approach that adapts this base model to retrieval
+with only single-sample batches. Finally, we validate the M2-BERT retrieval
+encoder on LoCoV1, finding that it outperforms competitive baselines by up to
+23.3 points, despite containing 5-90x fewer parameters.
 
-#### 7.Multimodal Interpretable Data-Driven Models for Early Prediction of Antimicrobial Multidrug Resistance Using Multivariate Time-Series. [Link](http://arxiv.org/abs/2402.06295v1) 
-#### GPT Score: 95
-Innovation:18, Newness:20, Potential:20, Clarity:18, Relevance:19
+#### 6.InternLM-Math: Open Math Large Language Models Toward Verifiable Reasoning. [Link](http://arxiv.org/abs/2402.06332v1) 
+#### GPT Score: 96
+Innovation:20, Newness:20, Potential:20, Clarity:18, Relevance:18
 ### Summary
-Electronic health records (EHR) is an inherently multimodal register of the
-patient's health status characterized by static data and multivariate time
-series (MTS). While MTS are a valuable tool for clinical prediction, their
-fusion with other data modalities can possibly result in more thorough insights
-and more accurate results. Deep neural networks (DNNs) have emerged as
-fundamental tools for identifying and defining underlying patterns in the
-healthcare domain. However, fundamental improvements in interpretability are
-needed for DNN models to be widely used in the clinical setting. In this study,
-we present an approach built on a collection of interpretable multimodal
-data-driven models that may anticipate and understand the emergence of
-antimicrobial multidrug resistance (AMR) germs in the intensive care unit (ICU)
-of the University Hospital of Fuenlabrada (Madrid, Spain). The profile and
-initial health status of the patient are modeled using static variables, while
-the evolution of the patient's health status during the ICU stay is modeled
-using several MTS, including mechanical ventilation and antibiotics intake. The
-multimodal DNNs models proposed in this paper include interpretable principles
-in addition to being effective at predicting AMR and providing an explainable
-prediction support system for AMR in the ICU. Furthermore, our proposed
-methodology based on multimodal models and interpretability schemes can be
-leveraged in additional clinical problems dealing with EHR data, broadening the
-impact and applicability of our results.
+The math abilities of large language models can represent their abstract
+reasoning ability. In this paper, we introduce and open-source our math
+reasoning LLMs InternLM-Math which is continue pre-trained from InternLM2. We
+unify chain-of-thought reasoning, reward modeling, formal reasoning, data
+augmentation, and code interpreter in a unified seq2seq format and supervise
+our model to be a versatile math reasoner, verifier, prover, and augmenter.
+These abilities can be used to develop the next math LLMs or self-iteration.
+InternLM-Math obtains open-sourced state-of-the-art performance under the
+setting of in-context learning, supervised fine-tuning, and code-assisted
+reasoning in various informal and formal benchmarks including GSM8K, MATH,
+Hungary math exam, MathBench-ZH, and MiniF2F. Our pre-trained model achieves
+30.3 on the MiniF2F test set without fine-tuning. We further explore how to use
+LEAN to solve math problems and study its performance under the setting of
+multi-task learning which shows the possibility of using LEAN as a unified
+platform for solving and proving in math. Our models, codes, and data are
+released at \url{https://github.com/InternLM/InternLM-Math}.
 
-#### 8.Unmasking honey adulteration : a breakthrough in quality assurance through cutting-edge convolutional neural network analysis of thermal images. [Link](http://arxiv.org/abs/2402.08122v1) 
-#### GPT Score: 95
-Innovation:20, Newness:19, Potential:19, Clarity:19, Relevance:18
+#### 7.Game-theoretic Counterfactual Explanation for Graph Neural Networks. [Link](http://arxiv.org/abs/2402.06030v1) 
+#### GPT Score: 96
+Innovation:18, Newness:20, Potential:20, Clarity:18, Relevance:20
 ### Summary
-Honey, a natural product generated from organic sources, is widely recognized
-for its revered reputation. Nevertheless, honey is susceptible to adulteration,
-a situation that has substantial consequences for both the well-being of the
-general population and the financial well-being of a country. Conventional
-approaches for detecting honey adulteration are often associated with extensive
-time requirements and restricted sensitivity. This paper presents a novel
-approach to address the aforementioned issue by employing Convolutional Neural
-Networks (CNNs) for the classification of honey samples based on thermal
-images. The use of thermal imaging technique offers a significant advantage in
-detecting adulterants, as it can reveal differences in temperature in honey
-samples caused by variations in sugar composition, moisture levels, and other
-substances used for adulteration. To establish a meticulous approach to
-categorizing honey, a thorough dataset comprising thermal images of authentic
-and tainted honey samples was collected. Several state-of-the-art Convolutional
-Neural Network (CNN) models were trained and optimized using the dataset that
-was gathered. Within this set of models, there exist pre-trained models such as
-InceptionV3, Xception, VGG19, and ResNet that have exhibited exceptional
-performance, achieving classification accuracies ranging from 88% to 98%.
-Furthermore, we have implemented a more streamlined and less complex
-convolutional neural network (CNN) model, outperforming comparable models with
-an outstanding accuracy rate of 99%. This simplification offers not only the
-sole advantage of the model, but it also concurrently offers a more efficient
-solution in terms of resources and time. This approach offers a viable way to
-implement quality control measures in the honey business, so guaranteeing the
-genuineness and safety of this valuable organic commodity.
+Graph Neural Networks (GNNs) have been a powerful tool for node
+classification tasks in complex networks. However, their decision-making
+processes remain a black-box to users, making it challenging to understand the
+reasoning behind their predictions. Counterfactual explanations (CFE) have
+shown promise in enhancing the interpretability of machine learning models.
+Prior approaches to compute CFE for GNNS often are learning-based approaches
+that require training additional graphs. In this paper, we propose a
+semivalue-based, non-learning approach to generate CFE for node classification
+tasks, eliminating the need for any additional training. Our results reveals
+that computing Banzhaf values requires lower sample complexity in identifying
+the counterfactual explanations compared to other popular methods such as
+computing Shapley values. Our empirical evidence indicates computing Banzhaf
+values can achieve up to a fourfold speed up compared to Shapley values. We
+also design a thresholding method for computing Banzhaf values and show
+theoretical and empirical results on its robustness in noisy environments,
+making it superior to Shapley values. Furthermore, the thresholded Banzhaf
+values are shown to enhance efficiency without compromising the quality (i.e.,
+fidelity) in the explanations in three popular graph datasets.
 
-#### 9.Conditional Neural Expert Processes for Learning from Demonstration. [Link](http://arxiv.org/abs/2402.08424v1) 
-#### GPT Score: 95
-Innovation:20, Newness:19, Potential:19, Clarity:19, Relevance:18
+#### 8.Memory-Efficient Vision Transformers: An Activation-Aware Mixed-Rank Compression Strategy. [Link](http://arxiv.org/abs/2402.06004v1) 
+#### GPT Score: 96
+Innovation:19, Newness:20, Potential:20, Clarity:18, Relevance:19
 ### Summary
-Learning from Demonstration (LfD) is a widely used technique for skill
-acquisition in robotics. However, demonstrations of the same skill may exhibit
-significant variances, or learning systems may attempt to acquire different
-means of the same skill simultaneously, making it challenging to encode these
-motions into movement primitives. To address these challenges, we propose an
-LfD framework, namely the Conditional Neural Expert Processes (CNEP), that
-learns to assign demonstrations from different modes to distinct expert
-networks utilizing the inherent information within the latent space to match
-experts with the encoded representations. CNEP does not require supervision on
-which mode the trajectories belong to. Provided experiments on artificially
-generated datasets demonstrate the efficacy of CNEP. Furthermore, we compare
-the performance of CNEP with another LfD framework, namely Conditional Neural
-Movement Primitives (CNMP), on a range of tasks, including experiments on a
-real robot. The results reveal enhanced modeling performance for movement
-primitives, leading to the synthesis of trajectories that more accurately
-reflect those demonstrated by experts, particularly when the model inputs
-include intersection points from various trajectories. Additionally, CNEP
-offers improved interpretability and faster convergence by promoting expert
-specialization. Furthermore, we show that the CNEP model accomplishes obstacle
-avoidance tasks with a real manipulator when provided with novel start and
-destination points, in contrast to the CNMP model, which leads to collisions
-with the obstacle.
+As Vision Transformers (ViTs) increasingly set new benchmarks in computer
+vision, their practical deployment on inference engines is often hindered by
+their significant memory bandwidth and (on-chip) memory footprint requirements.
+This paper addresses this memory limitation by introducing an activation-aware
+model compression methodology that uses selective low-rank weight tensor
+approximations of different layers to reduce the parameter count of ViTs. The
+key idea is to decompose the weight tensors into a sum of two
+parameter-efficient tensors while minimizing the error between the product of
+the input activations with the original weight tensor and the product of the
+input activations with the approximate tensor sum. This approximation is
+further refined by adopting an efficient layer-wise error compensation
+technique that uses the gradient of the layer's output loss. The combination of
+these techniques achieves excellent results while it avoids being trapped in a
+shallow local minimum early in the optimization process and strikes a good
+balance between the model compression and output accuracy. Notably, the
+presented method significantly reduces the parameter count of DeiT-B by 60%
+with less than 1% accuracy drop on the ImageNet dataset, overcoming the usual
+accuracy degradation seen in low-rank approximations. In addition to this, the
+presented compression technique can compress large DeiT/ViT models to have
+about the same model size as smaller DeiT/ViT variants while yielding up to
+1.8% accuracy gain. These results highlight the efficacy of our approach,
+presenting a viable solution for embedding ViTs in memory-constrained
+environments without compromising their performance.
 
-#### 10.Parameter-Efficient Fine-Tuning for Pre-Trained Vision Models: A Survey. [Link](http://arxiv.org/abs/2402.02242v2) 
-#### GPT Score: 95
-Innovation:19, Newness:18, Potential:20, Clarity:19, Relevance:19
+#### 9.RESMatch: Referring Expression Segmentation in a Semi-Supervised Manner. [Link](http://arxiv.org/abs/2402.05589v2) 
+#### GPT Score: 96
+Innovation:19, Newness:20, Potential:19, Clarity:19, Relevance:19
 ### Summary
-Large-scale pre-trained vision models (PVMs) have shown great potential for
-adaptability across various downstream vision tasks. However, with
-state-of-the-art PVMs growing to billions or even trillions of parameters, the
-standard full fine-tuning paradigm is becoming unsustainable due to high
-computational and storage demands. In response, researchers are exploring
-parameter-efficient fine-tuning (PEFT), which seeks to exceed the performance
-of full fine-tuning with minimal parameter modifications. This survey provides
-a comprehensive overview and future directions for visual PEFT, offering a
-systematic review of the latest advancements. First, we provide a formal
-definition of PEFT and discuss model pre-training methods. We then categorize
-existing methods into three categories: addition-based, partial-based, and
-unified-based. Finally, we introduce the commonly used datasets and
-applications and suggest potential future research challenges. A comprehensive
-collection of resources is available at
-https://github.com/synbol/Awesome-Parameter-Efficient-Transfer-Learning.
+Referring expression segmentation (RES), a task that involves localizing
+specific instance-level objects based on free-form linguistic descriptions, has
+emerged as a crucial frontier in human-AI interaction. It demands an intricate
+understanding of both visual and textual contexts and often requires extensive
+training data. This paper introduces RESMatch, the first semi-supervised
+learning (SSL) approach for RES, aimed at reducing reliance on exhaustive data
+annotation. Extensive validation on multiple RES datasets demonstrates that
+RESMatch significantly outperforms baseline approaches, establishing a new
+state-of-the-art. Although existing SSL techniques are effective in image
+segmentation, we find that they fall short in RES. Facing the challenges
+including the comprehension of free-form linguistic descriptions and the
+variability in object attributes, RESMatch introduces a trifecta of
+adaptations: revised strong perturbation, text augmentation, and adjustments
+for pseudo-label quality and strong-weak supervision. This pioneering work lays
+the groundwork for future research in semi-supervised learning for referring
+expression segmentation.
+
+#### 10.Reinforcement Learning as a Catalyst for Robust and Fair Federated Learning: Deciphering the Dynamics of Client Contributions. [Link](http://arxiv.org/abs/2402.05541v1) 
+#### GPT Score: 95
+Innovation:20, Newness:20, Potential:19, Clarity:18, Relevance:18
+### Summary
+Recent advancements in federated learning (FL) have produced models that
+retain user privacy by training across multiple decentralized devices or
+systems holding local data samples. However, these strategies often neglect the
+inherent challenges of statistical heterogeneity and vulnerability to
+adversarial attacks, which can degrade model robustness and fairness.
+Personalized FL strategies offer some respite by adjusting models to fit
+individual client profiles, yet they tend to neglect server-side aggregation
+vulnerabilities. To address these issues, we propose Reinforcement Federated
+Learning (RFL), a novel framework that leverages deep reinforcement learning to
+adaptively optimize client contribution during aggregation, thereby enhancing
+both model robustness against malicious clients and fairness across
+participants under non-identically distributed settings. To achieve this goal,
+we propose a meticulous approach involving a Deep Deterministic Policy
+Gradient-based algorithm for continuous control of aggregation weights, an
+innovative client selection method based on model parameter distances, and a
+reward mechanism guided by validation set performance. Empirically, extensive
+experiments demonstrate that, in terms of robustness, RFL outperforms the
+state-of-the-art methods, while maintaining comparable levels of fairness,
+offering a promising solution to build resilient and fair federated systems.
 
